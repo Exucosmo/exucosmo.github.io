@@ -1,0 +1,199 @@
+/* BODY */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./media/minoscitybg.png);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 0.3 1 0;
+
+    color: aliceblue;
+    background-color: rgb(51, 0, 65);
+    border: 0.2rem inset rgb(168, 42, 162);
+}
+
+.headertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headertext h1 {
+    text-align: center;
+    text-shadow: 0 0 .05rem #dd00ff, 0 0 .1rem #ffffff;
+}
+
+.header1 {
+    width: 20%;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 20%;
+}
+
+/* SECTION 2 */
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 50%;
+
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(153, 0, 163);
+}
+
+.welcomeimg {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.welcomeimg img {
+    margin-top: 1.7rem;
+    height: 90%;
+    width: 45%;
+
+    border: 0.2rem inset rgb(169, 0, 188);
+}
+
+.welcometext {
+    padding: 1%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.welcometext h1 {
+    color: #24002d;
+    text-shadow: 0 0 .6rem #2b0034;
+}
+
+.welcometext p {
+   text-shadow: .05rem .05rem .1rem #000000;
+}
+
+/* SECTION 3 */
+
+.section3 {
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+    color: aliceblue;
+    background-color: rgb(153, 0, 163);
+}
+
+.button {
+    margin: 1rem;
+
+    max-height: 25rem;
+    max-width: auto;
+    flex: 0 0 20%;
+
+    text-align: center;
+    border: 0.2rem inset rgb(123, 0, 136);
+    background-color: rgb(69, 0, 88);
+    box-shadow: .05rem .05rem .1rem #000000;
+}
+
+.button img {
+    display: block;
+    width: 75%;
+    margin: 12%;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1200px) {
+      
+    body {
+      background-image: url(./media/minoscitybg2.png);
+      font-size: 14px;
+    }
+
+    /* SECTION 1 MOBILE */
+    
+    /* SECTION 2 MOBILE */
+
+    .section2 {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .welcomeimg {
+        width: 100%;
+    }
+
+
+    .welcometext {
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    /* SECTION 3 MOBILE */
+
+    .section3 {
+        height: 80%;
+    }
+
+    .button {
+        margin: 1.5%;
+        flex: 0 0 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    body {
+      font-size: 12px;
+    }
+}
